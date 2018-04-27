@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  myshop.ui:
+    image: myshopui
+    build:
+      context: .\..\MyShop.UI
+      dockerfile: Dockerfile

@@ -1,0 +1,13 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  myshop.ui:
+    build:
+      context: A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI
+      dockerfile: Dockerfile
+    image: myshopui
+    ports:
+    - 80/tcp
+version: '3.0'

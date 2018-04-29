@@ -9,15 +9,15 @@ using MyShop.Core.ViewModels;
 
 namespace MyShop.UI.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductsController : BaseController
     {
-        ProductRepository productsCtx;
-        ProductCategoryRepository categories;
+        Repository<Product> productsCtx;
+        Repository<ProductCategory> categories;
 
         public ProductsController()
         {
-            productsCtx = new ProductRepository();
-            categories = new ProductCategoryRepository();
+            productsCtx = new Repository<Product>(ProductDBName);
+            categories = new Repository<ProductCategory>(ProductCategoryDBName);
         }
 
         public ActionResult Index()
@@ -47,14 +47,14 @@ namespace MyShop.UI.Controllers
 
         public ActionResult Get(string id)
         {
-            return View(this.productsCtx.Get(id));
+            return View(this.productsCtx.Get((p) => p.ID == id));
         }
 
         public ActionResult Edit(string id)
         {
             try
             {
-                Product p = this.productsCtx.Get(id);
+                Product p = this.productsCtx.Get((pr) => pr.ID == id);
                 return View(new ProductManagerViewModel
                 {
                     Product = p,
@@ -76,9 +76,9 @@ namespace MyShop.UI.Controllers
 
             try
             {
-                Product target = this.productsCtx.Get(id);
+                Product target = this.productsCtx.Get((pr) => pr.ID == id);
                 target.UpdateFrom(p.Product);
-                this.productsCtx.Update(target);
+                this.productsCtx.Update((pr) => pr.ID == id,target);
             }
             catch
             {
@@ -93,7 +93,7 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                this.productsCtx.Delete(id);
+                this.productsCtx.Delete((p) => p.ID == id);
             }catch
             {
                 return HttpNotFound();
@@ -105,7 +105,7 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                Product p = this.productsCtx.Get(id);
+                Product p = this.productsCtx.Get((pr) => pr.ID == id);
                 return View(p);
             }catch
             {

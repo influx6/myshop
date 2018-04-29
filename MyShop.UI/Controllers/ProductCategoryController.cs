@@ -8,18 +8,18 @@ using MyShop.Data.Local;
 
 namespace MyShop.UI.Controllers
 {
-    public class ProductCategoryController : Controller
+    public class ProductCategoryController : BaseController
     {
-        ProductCategoryRepository productsCtx;
+        Repository<ProductCategory> context;
 
         public ProductCategoryController()
         {
-            productsCtx = new ProductCategoryRepository();
+            context = new Repository<ProductCategory>(ProductCategoryDBName);
         }
 
         public ActionResult Index()
         {
-            return View(productsCtx.List().ToList());
+            return View(context.List().ToList());
         }
 
         public ActionResult Create()
@@ -35,20 +35,20 @@ namespace MyShop.UI.Controllers
                 return View(p);
             }
 
-            this.productsCtx.Save(p);
+            this.context.Save(p);
             return RedirectToAction("Index");
         }
 
         public ActionResult Get(string id)
         {
-            return View(this.productsCtx.Get(id));
+            return View(this.context.Get((pr) => pr.ID == id));
         }
 
         public ActionResult Edit(string id)
         {
             try
             {
-                ProductCategory p = this.productsCtx.Get(id);
+                ProductCategory p = this.context.Get((pr) => pr.ID == id);
                 return View(p);
             }
             catch
@@ -67,9 +67,9 @@ namespace MyShop.UI.Controllers
 
             try
             {
-                ProductCategory target = this.productsCtx.Get(id);
+                ProductCategory target = this.context.Get((pr) => pr.ID == id);
                 target.UpdateFrom(p);
-                this.productsCtx.Update(target);
+                this.context.Update((pr) => pr.ID == id,target);
             }
             catch
             {
@@ -84,7 +84,7 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                this.productsCtx.Delete(id);
+                this.context.Delete((pr) => pr.ID == id);
             }
             catch
             {
@@ -97,7 +97,7 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                ProductCategory p = this.productsCtx.Get(id);
+                ProductCategory p = this.context.Get((pr) => pr.ID == id);
                 return View(p);
             }
             catch

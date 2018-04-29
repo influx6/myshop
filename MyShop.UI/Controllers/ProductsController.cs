@@ -6,18 +6,25 @@ using System.Web.Mvc;
 using MyShop.Core.Models;
 using MyShop.Data.Local;
 using MyShop.Core.ViewModels;
+using MyShop.Core.DataRepository;
 
 namespace MyShop.UI.Controllers
 {
-    public class ProductsController : BaseController
+    public class ProductsController : Controller
     {
-        Repository<Product> productsCtx;
-        Repository<ProductCategory> categories;
+        IDataRepository<Product> productsCtx;
+        IDataRepository<ProductCategory> categories;
 
         public ProductsController()
         {
-            productsCtx = new Repository<Product>(ProductDBName);
-            categories = new Repository<ProductCategory>(ProductCategoryDBName);
+            productsCtx = new Repository<Product>();
+            categories = new Repository<ProductCategory>();
+        }
+
+        public ProductsController(IDataRepository<Product> products, IDataRepository<ProductCategory> categories)
+        {
+            this.productsCtx = products;
+            this.categories = categories;
         }
 
         public ActionResult Index()

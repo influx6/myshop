@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MyShop.Core.DataRepository;
 using MyShop.Core.Models;
 using MyShop.Data.Local;
 
 namespace MyShop.UI.Controllers
 {
-    public class ProductCategoryController : BaseController
+    public class ProductCategoryController : Controller
     {
-        Repository<ProductCategory> context;
+        IDataRepository<ProductCategory> context;
 
         public ProductCategoryController()
         {
-            context = new Repository<ProductCategory>(ProductCategoryDBName);
+            context = new Repository<ProductCategory>();
+        }
+
+        public ProductCategoryController(IDataRepository<ProductCategory> context)
+        {
+            this.context = context;
         }
 
         public ActionResult Index()

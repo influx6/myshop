@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyShop.Core.DataRepository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Caching;
@@ -7,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace MyShop.Data.Local
 {
-    public class Repository<T>
+    public class Repository<T> : IDataRepository<T>
     {
         private string dbName;
         private ObjectCache cache = MemoryCache.Default;
         private List<T> models;
 
-        public Repository(string db){
-            this.dbName = db;
+        public Repository(){
+            this.dbName = typeof(T).Name;
             this.models = this.cache[this.dbName] as List<T>;
             if(this.models == null){
                 this.models = new List<T>();

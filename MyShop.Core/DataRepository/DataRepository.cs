@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyShop.Core.DataRepository
 {
-    public interface DataRepository<T>
+    public interface IDataRepository<T>
     {
         void Save(T t);
         IQueryable<T> List();

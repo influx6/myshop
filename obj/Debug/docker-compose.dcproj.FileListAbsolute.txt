@@ -1,0 +1,1 @@
+A:\Documents\golab\src\github.com\influx6\MyShop\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

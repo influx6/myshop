@@ -5,19 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 using MyShop.Core.Models;
 using MyShop.Data.Local;
-using MyShop.Core.ViewModels;
 
 namespace MyShop.UI.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductCategoryController : Controller
     {
-        ProductRepository productsCtx;
-        ProductCategoryRepository categories;
+        ProductCategoryRepository productsCtx;
 
-        public ProductsController()
+        public ProductCategoryController()
         {
-            productsCtx = new ProductRepository();
-            categories = new ProductCategoryRepository();
+            productsCtx = new ProductCategoryRepository();
         }
 
         public ActionResult Index()
@@ -27,21 +24,18 @@ namespace MyShop.UI.Controllers
 
         public ActionResult Create()
         {
-            return View(new ProductManagerViewModel {
-                Product=new Product(),
-                Categories=this.categories.List(),
-            });
+            return View(new ProductCategory());
         }
 
         [HttpPost]
-        public ActionResult Create(ProductManagerViewModel p)
+        public ActionResult Create(ProductCategory p)
         {
             if (!ModelState.IsValid)
             {
                 return View(p);
             }
 
-            this.productsCtx.Save(p.Product);
+            this.productsCtx.Save(p);
             return RedirectToAction("Index");
         }
 
@@ -54,20 +48,17 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                Product p = this.productsCtx.Get(id);
-                return View(new ProductManagerViewModel
-                {
-                    Product = p,
-                    Categories = this.categories.List(),
-                });
+                ProductCategory p = this.productsCtx.Get(id);
+                return View(p);
             }
-            catch { 
+            catch
+            {
                 return HttpNotFound();
             }
         }
 
         [HttpPost]
-        public ActionResult Edit(string id, ProductManagerViewModel p)
+        public ActionResult Edit(string id, ProductCategory p)
         {
             if (!ModelState.IsValid)
             {
@@ -76,8 +67,8 @@ namespace MyShop.UI.Controllers
 
             try
             {
-                Product target = this.productsCtx.Get(id);
-                target.UpdateFrom(p.Product);
+                ProductCategory target = this.productsCtx.Get(id);
+                target.UpdateFrom(p);
                 this.productsCtx.Update(target);
             }
             catch
@@ -94,7 +85,8 @@ namespace MyShop.UI.Controllers
             try
             {
                 this.productsCtx.Delete(id);
-            }catch
+            }
+            catch
             {
                 return HttpNotFound();
             }
@@ -105,9 +97,10 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                Product p = this.productsCtx.Get(id);
+                ProductCategory p = this.productsCtx.Get(id);
                 return View(p);
-            }catch
+            }
+            catch
             {
                 return HttpNotFound();
             }

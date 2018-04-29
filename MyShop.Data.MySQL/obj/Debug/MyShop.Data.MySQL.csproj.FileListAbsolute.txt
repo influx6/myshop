@@ -3,3 +3,4 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\MyS
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.csproj.CoreCompileInputs.cache
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.pdb
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.csprojResolveAssemblyReference.cache

@@ -1,9 +1,9 @@
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\obj\Debug\MyShop.Data.Local.csprojResolveAssemblyReference.cache
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\obj\Debug\MyShop.Data.Local.csproj.CoreCompileInputs.cache
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\bin\Debug\MyShop.Data.Local.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\bin\Debug\MyShop.Data.Local.pdb
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\bin\Debug\MyShop.Core.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\bin\Debug\MyShop.Core.pdb
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\obj\Debug\MyShop.Data.Local.csprojResolveAssemblyReference.cache
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\obj\Debug\MyShop.Data.Local.csproj.CoreCompileInputs.cache
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\obj\Debug\MyShop.Data.Local.csproj.CopyComplete
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\obj\Debug\MyShop.Data.Local.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.Local\obj\Debug\MyShop.Data.Local.pdb

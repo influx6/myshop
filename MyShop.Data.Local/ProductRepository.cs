@@ -53,6 +53,7 @@ namespace MyShop.Data.Local
             }
 
             old = p;
+            this.commit();
         }
 
         public void Delete(string id)
@@ -63,6 +64,7 @@ namespace MyShop.Data.Local
                 throw new Exception("not found");
             }
             this.products.Remove(old);
+            this.commit();
         }
 
         public void commit()

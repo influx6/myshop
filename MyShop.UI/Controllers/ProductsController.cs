@@ -62,6 +62,7 @@ namespace MyShop.UI.Controllers
         }
 
         [HttpPut]
+        [HttpPost]
         public ActionResult Edit(string id, Product p)
         {
             if (!ModelState.IsValid)
@@ -83,8 +84,9 @@ namespace MyShop.UI.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpDelete]
-        public ActionResult Delete(string id)
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult ConfirmDelete(string id)
         {
             try
             {
@@ -94,6 +96,20 @@ namespace MyShop.UI.Controllers
                 return HttpNotFound();
             }
             return RedirectToAction("Index");
+        }
+
+        [HttpDelete]
+        [HttpGet]
+        public ActionResult Delete(string id)
+        {
+            try
+            {
+                Product p = this.productsCtx.Get(id);
+                return View(p);
+            }catch
+            {
+                return HttpNotFound();
+            }
         }
     }
 }

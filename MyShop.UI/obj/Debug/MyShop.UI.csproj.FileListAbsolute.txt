@@ -1,3 +1,11 @@
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.IO.Compression.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\VBCSCompiler.exe
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.csprojResolveAssemblyReference.cache
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.csproj.CoreCompileInputs.cache
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\ApplicationInsights.config
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.UI.dll.config
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.UI.dll
@@ -9,13 +17,9 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\csi.exe
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\csi.exe.config
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\csi.rsp
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.CSharp.Core.targets
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -25,7 +29,6 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.Con
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.Diagnostics.Process.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.Diagnostics.StackTrace.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.IO.Compression.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.IO.FileSystem.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.IO.FileSystem.Primitives.dll
@@ -48,7 +51,6 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\System.Xml
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\vbc.exe
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\vbc.exe.config
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\vbc.rsp
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\VBCSCompiler.exe
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\roslyn\VBCSCompiler.exe.config
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Antlr3.Runtime.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\EntityFramework.dll
@@ -119,8 +121,6 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Microsoft.AI.Depe
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Microsoft.AI.ServerTelemetryChannel.xml
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Microsoft.AI.WindowsServer.xml
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Microsoft.AI.Web.xml
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.csprojResolveAssemblyReference.cache
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.csproj.CoreCompileInputs.cache
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.csproj.CopyComplete
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.pdb

@@ -1,3 +1,5 @@
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.csproj.CoreCompileInputs.cache
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.csprojResolveAssemblyReference.cache
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\ApplicationInsights.config
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
@@ -50,8 +52,6 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\MySho
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\EntityFramework.xml
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.csprojResolveAssemblyReference.cache
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.csproj.CoreCompileInputs.cache
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.csproj.CopyComplete
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.pdb

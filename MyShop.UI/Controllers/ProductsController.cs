@@ -15,12 +15,6 @@ namespace MyShop.UI.Controllers
         IDataRepository<Product> productsCtx;
         IDataRepository<ProductCategory> categories;
 
-        public ProductsController()
-        {
-            productsCtx = new Repository<Product>();
-            categories = new Repository<ProductCategory>();
-        }
-
         public ProductsController(IDataRepository<Product> products, IDataRepository<ProductCategory> categories)
         {
             this.productsCtx = products;

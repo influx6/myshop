@@ -55,3 +55,7 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MySho
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.csproj.CopyComplete
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\obj\Debug\MyShop.UI.Tests.pdb
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\WebActivatorEx.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\Unity.Abstractions.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\Unity.Container.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI.Tests\bin\Debug\Unity.Mvc.dll

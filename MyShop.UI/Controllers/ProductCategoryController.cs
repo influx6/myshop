@@ -13,11 +13,6 @@ namespace MyShop.UI.Controllers
     {
         IDataRepository<ProductCategory> context;
 
-        public ProductCategoryController()
-        {
-            context = new Repository<ProductCategory>();
-        }
-
         public ProductCategoryController(IDataRepository<ProductCategory> context)
         {
             this.context = context;

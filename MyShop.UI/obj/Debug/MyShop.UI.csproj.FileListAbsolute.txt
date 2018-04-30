@@ -128,3 +128,4 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Abstraction
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Container.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Mvc.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\WebActivatorEx.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Data.MySQL.dll.config

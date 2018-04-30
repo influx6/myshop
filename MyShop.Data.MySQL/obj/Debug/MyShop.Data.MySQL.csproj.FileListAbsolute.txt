@@ -4,3 +4,13 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyS
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.pdb
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.csprojResolveAssemblyReference.cache
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\MyShop.Data.MySQL.dll.config
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\EntityFramework.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\EntityFramework.SqlServer.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\MyShop.Core.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\MyShop.Core.pdb
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\EntityFramework.xml
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\bin\Debug\EntityFramework.SqlServer.xml
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.csproj.CopyComplete
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.Migrations.Initial.resources
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Data.MySQL\obj\Debug\MyShop.Data.MySQL.csproj.GenerateResource.cache

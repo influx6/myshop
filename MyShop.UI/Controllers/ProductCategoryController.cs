@@ -37,19 +37,20 @@ namespace MyShop.UI.Controllers
             }
 
             this.context.Save(p);
+            this.context.Commit();
             return RedirectToAction("Index");
         }
 
         public ActionResult Get(string id)
         {
-            return View(this.context.Get((pr) => pr.ID == id));
+            return View(this.context.Get(id));
         }
 
         public ActionResult Edit(string id)
         {
             try
             {
-                ProductCategory p = this.context.Get((pr) => pr.ID == id);
+                ProductCategory p = this.context.Get(id);
                 return View(p);
             }
             catch
@@ -68,9 +69,10 @@ namespace MyShop.UI.Controllers
 
             try
             {
-                ProductCategory target = this.context.Get((pr) => pr.ID == id);
+                ProductCategory target = this.context.Get(p.ID);
                 target.UpdateFrom(p);
-                this.context.Update((pr) => pr.ID == id,target);
+                this.context.Update(target);
+                this.context.Commit();
             }
             catch
             {
@@ -85,7 +87,8 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                this.context.Delete((pr) => pr.ID == id);
+                this.context.Delete(id);
+                this.context.Commit();
             }
             catch
             {
@@ -98,7 +101,7 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                ProductCategory p = this.context.Get((pr) => pr.ID == id);
+                ProductCategory p = this.context.Get(id);
                 return View(p);
             }
             catch

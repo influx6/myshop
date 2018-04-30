@@ -86,10 +86,15 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\System.Web.Razor.
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\System.Web.WebPages.Deployment.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\System.Web.WebPages.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\System.Web.WebPages.Razor.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Abstractions.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Container.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Mvc.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\WebActivatorEx.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\WebGrease.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Core.pdb
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Data.Local.pdb
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Data.MySQL.pdb
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Data.MySQL.dll.config
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\System.Web.Helpers.xml
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\System.Web.Mvc.xml
@@ -124,8 +129,3 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.c
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.csproj.CopyComplete
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.pdb
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Abstractions.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Container.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\Unity.Mvc.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\WebActivatorEx.dll
-A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Data.MySQL.dll.config

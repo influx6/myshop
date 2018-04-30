@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyShop.Core.Models
 {
-    public class ProductCategory
+    public class ProductCategory : BaseType
     {
-        public string ID { get; set; }
         public string Value { get; set; }
 
-        public ProductCategory()
+        public ProductCategory() : base()
         {
-            this.ID = Guid.NewGuid().ToString();
         }
 
         public void UpdateFrom(ProductCategory c)

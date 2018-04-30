@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyShop.Core.DataRepository
 {
-    public interface IDataRepository<T>
+    public interface IDataRepository<T> 
     {
         void Save(T t);
+        void Commit();
         IQueryable<T> List();
-         T Get(Predicate<T> match);
-        void Delete(Predicate<T> match);
-        void Update(Predicate<T> match, T t);
+         T Get(string id);
+        void Delete(string id);
+        void Update(T t);
     }
 }

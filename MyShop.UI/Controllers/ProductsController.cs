@@ -43,19 +43,20 @@ namespace MyShop.UI.Controllers
             }
 
             this.productsCtx.Save(p.Product);
+            this.productsCtx.Commit();
             return RedirectToAction("Index");
         }
 
         public ActionResult Get(string id)
         {
-            return View(this.productsCtx.Get((p) => p.ID == id));
+            return View(this.productsCtx.Get(id));
         }
 
         public ActionResult Edit(string id)
         {
             try
             {
-                Product p = this.productsCtx.Get((pr) => pr.ID == id);
+                Product p = this.productsCtx.Get(id);
                 return View(new ProductManagerViewModel
                 {
                     Product = p,
@@ -77,9 +78,10 @@ namespace MyShop.UI.Controllers
 
             try
             {
-                Product target = this.productsCtx.Get((pr) => pr.ID == id);
+                Product target = this.productsCtx.Get(id);
                 target.UpdateFrom(p.Product);
-                this.productsCtx.Update((pr) => pr.ID == id,target);
+                this.productsCtx.Update(target);
+                this.productsCtx.Commit();
             }
             catch
             {
@@ -94,7 +96,8 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                this.productsCtx.Delete((p) => p.ID == id);
+                this.productsCtx.Delete(id);
+                this.productsCtx.Commit();
             }catch
             {
                 return HttpNotFound();
@@ -106,7 +109,7 @@ namespace MyShop.UI.Controllers
         {
             try
             {
-                Product p = this.productsCtx.Get((pr) => pr.ID == id);
+                Product p = this.productsCtx.Get(id);
                 return View(p);
             }catch
             {

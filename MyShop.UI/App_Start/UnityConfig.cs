@@ -1,6 +1,6 @@
 using MyShop.Core.DataRepository;
 using MyShop.Core.Models;
-using MyShop.Data.Local;
+using MyShop.Data.MySQL;
 using System;
 
 using Unity;

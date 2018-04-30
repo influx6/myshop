@@ -13,6 +13,7 @@ namespace MyShop.Data.MySQL.Migrations
                     {
                         ID = c.String(nullable: false, maxLength: 128),
                         Value = c.String(),
+                        CreatedAt = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.ID);
             
@@ -26,6 +27,7 @@ namespace MyShop.Data.MySQL.Migrations
                         Price = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Category = c.String(),
                         Image = c.String(),
+                        CreatedAt = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.ID);
             

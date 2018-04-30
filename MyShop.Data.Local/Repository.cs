@@ -5,10 +5,11 @@ using System.Linq;
 using System.Runtime.Caching;
 using System.Text;
 using System.Threading.Tasks;
+using MyShop.Core.Models;
 
 namespace MyShop.Data.Local
 {
-    public class Repository<T> : IDataRepository<T>
+    public class Repository<T> : IDataRepository<T> where T : BaseType
     {
         private string dbName;
         private ObjectCache cache = MemoryCache.Default;
@@ -27,9 +28,9 @@ namespace MyShop.Data.Local
             return models.AsQueryable();
         }
 
-        public T Get(Predicate<T> pr)
+        public T Get(string id)
         {
-            T p = this.models.Find(pr);
+            T p = this.models.Find((pr) => pr.ID == id);
             if (p == null)
             {
                 throw new Exception("not found");
@@ -40,33 +41,30 @@ namespace MyShop.Data.Local
         public void Save(T p)
         {
             this.models.Add(p);
-            this.commit();
         }
 
-        public void Update(Predicate<T> pr, T newT)
+        public void Update(T newT)
         {
-            T old = this.models.Find(pr);
+            T old = this.models.Find((pr) => pr.ID == newT.ID);
             if (old == null)
             {
                 throw new Exception("not found");
             }
 
             old = newT;
-            this.commit();
         }
 
-        public void Delete(Predicate<T> match)
+        public void Delete(string id)
         {
-            T old = this.models.Find(match);
+            T old = this.models.Find((p) => p.ID == id);
             if (old == null)
             {
                 throw new Exception("not found");
             }
             this.models.Remove(old);
-            this.commit();
         }
 
-        public void commit()
+        public void Commit()
         {
             this.cache[this.dbName] = this.models;
         }

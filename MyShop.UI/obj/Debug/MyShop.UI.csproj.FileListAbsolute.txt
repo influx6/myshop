@@ -129,3 +129,5 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.c
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.csproj.CopyComplete
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\obj\Debug\MyShop.UI.pdb
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Services.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.UI\bin\MyShop.Services.pdb

@@ -4,3 +4,6 @@ A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Services\obj\Debug\MySho
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Services\obj\Debug\MyShop.Services.dll
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Services\obj\Debug\MyShop.Services.pdb
 A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Services\obj\Debug\MyShop.Services.csprojResolveAssemblyReference.cache
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Services\bin\Debug\MyShop.Core.dll
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Services\bin\Debug\MyShop.Core.pdb
+A:\Documents\golab\src\github.com\influx6\MyShop\MyShop.Services\obj\Debug\MyShop.Services.csproj.CopyComplete

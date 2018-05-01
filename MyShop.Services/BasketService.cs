@@ -58,6 +58,9 @@ namespace MyShop.Services
             HttpCookie cookie = ctx.Request.Cookies.Get(BasketSessionName);
             if(cookie == null)
             {
+                if(doCreate){
+                    return createBasket(ctx);
+                }
                 return new Basket();
             }
 

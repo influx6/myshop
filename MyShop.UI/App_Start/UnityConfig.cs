@@ -48,7 +48,10 @@ namespace MyShop.UI
             // container.RegisterType<IProductRepository, ProductRepository>();
             container.RegisterType<IDataRepository<Product>, Repository<Product>>();
             container.RegisterType<IDataRepository<ProductCategory>, Repository<ProductCategory>>();
-            //container.RegisterType<IDataRepository<IBasketService>, Repository<BasketService>>();
+
+            container.RegisterType<IBasketService, BasketService>();
+            container.RegisterType<IDataRepository<Basket>, Repository<Basket>>();
+            container.RegisterType<IDataRepository<BasketItem>, Repository<BasketItem>>();
         }
     }
 }

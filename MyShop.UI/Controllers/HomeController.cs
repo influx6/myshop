@@ -21,9 +21,20 @@ namespace MyShop.UI.Controllers
             this.categories = categories;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(string category=null)
         {
-            return View(this.productsCtx.List());
+            if (category == null){
+                return View(new ProductListView{
+                    Products= this.productsCtx.List(),
+                    Categories= this.categories.List(),
+                });
+            }
+
+            var products = this.productsCtx.List().Where((pr) => pr.Category == category).ToList();
+            return View(new ProductListView{
+                Products= products,
+                Categories= this.categories.List(),
+            });
         }
 
         public ActionResult Detail(string id)

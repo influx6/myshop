@@ -1,11 +1,22 @@
-﻿@model IEnumerable<MyShop.Core.Models.Product>
+﻿@model MyShop.Core.ViewModels.ProductListView
 
 @{
     ViewBag.Title = "MyShop Home Page";
 }
 
+<div class="col-md-2">
+    <h4>Filter By Category</h4>
+    <div class="list-group">
+        @Html.ActionLink("All", "Index", null, new { @class=Request["category"]==null? "list-group-item active" : "list-group-item"})
+        @foreach (var item in Model.Categories)
+        {
+            @Html.ActionLink(item.Value, "Index",  new {category=item.Value}, new { @class=Request["category"]==item.Value? "list-group-item active" : "list-group-item"})
+        }
+    </div>
+</div>
 
-@foreach (var item in Model) {
+<div class="col-md-10">
+@foreach (var item in Model.Products) {
     <div class="col-md-4" style="height:450px;padding:10px;margin:10px;border: solid thin whitesmoke">
         <div class="col-md-12">
             <img class="img" style="height:250px" src="~/Content/product_images/@item.Image" />
@@ -24,4 +35,5 @@
         </div>
     </div>
 }
+</div>
 <div class="clearfix"></div>

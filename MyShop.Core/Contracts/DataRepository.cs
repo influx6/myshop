@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyShop.Core.DataRepository
+namespace MyShop.Core.Contracts
 {
     public interface IDataRepository<T> 
     {

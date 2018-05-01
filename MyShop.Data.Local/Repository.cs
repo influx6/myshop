@@ -1,4 +1,4 @@
-﻿using MyShop.Core.DataRepository;
+﻿using MyShop.Core.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;

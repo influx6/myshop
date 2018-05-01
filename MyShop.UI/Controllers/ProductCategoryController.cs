@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MyShop.Core.DataRepository;
+using MyShop.Core.Contracts;
 using MyShop.Core.Models;
 using MyShop.Data.Local;
 

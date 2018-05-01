@@ -1,6 +1,7 @@
-using MyShop.Core.DataRepository;
+using MyShop.Core.Contracts;
 using MyShop.Core.Models;
 using MyShop.Data.MySQL;
+using MyShop.Services;
 using System;
 
 using Unity;
@@ -47,6 +48,7 @@ namespace MyShop.UI
             // container.RegisterType<IProductRepository, ProductRepository>();
             container.RegisterType<IDataRepository<Product>, Repository<Product>>();
             container.RegisterType<IDataRepository<ProductCategory>, Repository<ProductCategory>>();
+            //container.RegisterType<IDataRepository<IBasketService>, Repository<BasketService>>();
         }
     }
 }

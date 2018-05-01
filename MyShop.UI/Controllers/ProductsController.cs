@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using MyShop.Core.Models;
 using MyShop.Data.Local;
 using MyShop.Core.ViewModels;
-using MyShop.Core.DataRepository;
+using MyShop.Core.Contracts;
 using System.IO;
 
 namespace MyShop.UI.Controllers

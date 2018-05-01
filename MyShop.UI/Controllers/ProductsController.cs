@@ -7,6 +7,7 @@ using MyShop.Core.Models;
 using MyShop.Data.Local;
 using MyShop.Core.ViewModels;
 using MyShop.Core.DataRepository;
+using System.IO;
 
 namespace MyShop.UI.Controllers
 {
@@ -35,11 +36,17 @@ namespace MyShop.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(ProductManagerViewModel p)
+        public ActionResult Create(ProductManagerViewModel p, HttpPostedFileBase image)
         {
+            
             if (!ModelState.IsValid)
             {
                 return View(p);
+            }
+
+            if (image != null && image.ContentLength > 0 ) {
+                p.Product.Image = p.Product.ID + Path.GetExtension(image.FileName);
+                image.SaveAs(Server.MapPath("//Content//product_images//") + p.Product.Image);
             }
 
             this.productsCtx.Save(p.Product);
@@ -69,7 +76,7 @@ namespace MyShop.UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit(string id, ProductManagerViewModel p)
+        public ActionResult Edit(string id, ProductManagerViewModel p, HttpPostedFileBase image)
         {
             if (!ModelState.IsValid)
             {
@@ -79,6 +86,12 @@ namespace MyShop.UI.Controllers
             try
             {
                 Product target = this.productsCtx.Get(id);
+
+                if (image != null && image.ContentLength > 0 ) {
+                    p.Product.Image = p.Product.ID + Path.GetExtension(image.FileName);
+                    image.SaveAs(Server.MapPath("//Content//product_images//") + p.Product.Image);
+                }
+
                 target.UpdateFrom(p.Product);
                 this.productsCtx.Update(target);
                 this.productsCtx.Commit();

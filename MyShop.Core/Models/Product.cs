@@ -48,7 +48,11 @@ namespace MyShop.Core.Models
             this.Price = p.Price;
             this.Category = p.Category;
             this.Description = p.Description;
-            this.Image = p.Image;
+
+            if(p.Image != null)
+            {
+                this.Image = p.Image;
+            }
         }
     }
 }
